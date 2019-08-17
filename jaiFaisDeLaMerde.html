@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Assignment 1 - Week 5</title>
+    <style>
+        /* Fonts were not present by default in my IDE, I used the function @font-face to import the downloaded file, please find it attached in the "fonts" folder */
+        @font-face {
+            font-family: 'ancillary';
+            src: url("/fonts/Ancillary-Regular.otf");
+        }
+
+        @font-face {
+            font-family: 'calluna';
+            src: url("/fonts/calluna.otf");
+        }
+
+        @font-face {
+            font-family: 'brush';
+            src: url("/fonts/brush-script.ttf");
+        }
+
+        /* I wasn't sure if I should use internal or external CSS for this assignment so I will just stick with the internal one for there is only one page to be displayed */
+
+        .document {
+            width: 620px;
+        }
+
+        .shadow {
+
+            text-shadow: 2px 2px 4px #666666;
+            letter-spacing: 2px;
+
+        }
+
+        .address {
+            text-align: left;
+            width: 200px;
+            font-family: calluna;
+            font-style: italic;
+
+        }
+
+        h2 {
+            font-family: ancillary;
+            font-size: 12px;
+            font-weight: bold;
+
+        }
+
+        .hr {
+            width: 180px;
+            text-align: center;
+            margin-left: -4px;
+
+
+        }
+
+        p.custom-paragraph {
+            line-height: 1.6em;
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        p.last-paragraph {
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        p.custom-paragraph:first-letter {
+            font-size: 30px;
+        }
+
+        /* THe pink color from CSS doesn't match what is displayed of the assignment example, I had to customize the color */
+        .pink {
+            color: rgb(231, 65, 223);
+        }
+
+        .campuses {
+            text-align: right;
+            text-decoration: underline;
+            font-size: 18px;
+        }
+
+        /* Adding some padding to the form input to make it look more similar to the on displayed in the assignment */
+        .email {
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background: black;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 4px 10px;
+
+        }
+
+        .footer {
+            font-family: brush;
+            font-size: 30px;
+            color: #424EB8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="document">
+        <div>
+            <h1 class="shadow">Stamford International University</h1>
+        </div>
+        <h2>RAMA 9 CAMPUS</h2>
+        <div class="address">
+            <hr class="hr">
+            <p class="address">16, Motorway Road - Km2. Prawet, Bangkok 10250 Thailand.</p>
+        </div>
+        <p class="custom-paragraph">Stamford College was started with an english-based international curiculum, parallel
+            courses in <span class="pink">Thai language</span> were introduced along the way. Credits can be transferred
+            worldwide to (and from) colleges and universities at the undergraduate and postgraduated level</p>
+        <p class="custom-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nobis eius officiis
+            ex! Nihil, corporis cupiditate nobis quos molestias adipisci vero quae. Molestiae modi ullam quisquam ea
+            nesciunt suscipit excepturi.</p>
+        <p class="last-paragraph">The university established an academic collaboration agreement with <span
+                class="pink">Schiller International University</span> of the United States in 2000 and was renamed the
+            Schiller-Stamford Internatinal College (2 August 2000) that year. Students at Stamford (Hua Hin) have an
+            opportunity to study in any of the 8 campuses of Schiller in Europe and the United STates, through
+            programmes offered under the student exchange agreement between the two universities.</p>
+        <div>
+            <p class="campuses">Campuses: Rama 9, Huahin, and Asoke</p>
+        </div>
+        <div>
+            <label for="email"></label>
+            <input class="email" type="email" id="email" name="email" placeholder="Enter your Email">
+            <button class="button" type="submit">Subscribe now</button>
+        </div>
+        <div>
+
+            <hr>
+        </div>
+        <div class="footer">
+            <p> &copy; Made with &hearts; by Jey.</p>
+        </div>
+    </div>
+
+</body>
+
+<!-- Assignment indications were incomplete and required a lot of improvisation -->
+
+<!-- if you are reading my comments, could you please chacky provide me more personnal assignment in order to practice my web development skills..
+
+I really enjoy this subject and also plan on trying to become a good front and back end dev (full stack dev) alongside network security-->
+
+</html>
