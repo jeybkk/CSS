@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Assignment 2 - Week 5</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: monospace;
+            background: grey;
+        }
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            width: 650px;
+            border: black double 3px;
+            background: white;
+            padding:20px;
+        }
+        /* I struggled to understand why some elements of the body remained grey, the container * class fixed the issue, but I still don't really understand why */
+        .container *{
+            background: white;
+        }
+        .logo{
+            width: 280px;
+        }
+        hr{
+            width: 500px;
+        }
+        .img{
+            width: 280px;
+            padding: 10px;
+        }
+        li{
+            margin-right: 25px;
+            display: inline;
+        }
+        a:visited{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <img class="logo" src="./assignment5_img/logo.jpg" alt="logo">
+        <hr>
+        <ul>
+            <a href="https://www.stamford.edu/"><li>HOME</li></a>
+            <a href="#"><li>RAMA 9</li></a>
+            <a href="#"><li>ASOKE</li></a>
+            <a href="#"><li>ASOKE</li></a>
+            <a href="https://admissions.stamford.edu/contact-us/"><li>CONTACT US</li></a>
+        </ul>
+        <hr>
+        <img class="img" src="./assignment5_img/image1.jpg" alt="image1">
+        <img class="img" src="./assignment5_img/image2.jpg" alt="image2">
+        <p>One of the most international, diverse and experienced faculty in Thailand. 70 percent of Stamford members are international from countries including the USA, UK, France, Germany and many more.</p>
+    </div>
+</body>
+</html>
